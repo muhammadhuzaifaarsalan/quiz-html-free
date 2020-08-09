@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="main"> -->
+    <div id="box" class="box">
+        <!-- <form action=""> -->
+            <input id="input" type="text" placeholder="Enter Student name" required>
+            <h2>Instruction</h2>
+            <p>Total number of Questions <span id="total"></span></p>
+            <button class="btn" onclick="startQuiz()">Start Quiz</button>
+            <a href="/index.html"><button class="btn1">Back</button></a>
+        <!-- </form> -->
+          
+    </div>
+
+    <div id="question-box" class="box question-box hide">
+        <h3>Student Name: <span id="user"></span></h3>
+        <div>
+            <h2 id="question-number"></h2>    
+        </div>
+
+        <div id="question">
+
+        </div>
+
+        <div id="options" class="options">
+
+        </div>
+
+        <button class="btn" onclick="nextQuiz()">Next</button>
+
+        
+  
+    </div>
+    <div id="quiz-over" class="box quiz-over hide">
+        <h1>Quiz End</h1>
+        <button class="btn" onclick="seeResult()">Total-percentage</button>
+    </div>
+
+    <div id="result-box" class="result box hide">
+        <div>
+            <h1>Result</h1>
+        </div>
+      
+        
+    <div id="score">
+        <div>
+            <p>Student Name: </p><p  id="result-user"></p>
+        </div>
+
+        <div>
+            <p>Total Questions: </p><p  id="total-quiz"></p>
+        </div>
+
+        <div>
+            <p>Correct: </p><p  id="total-correct"></p>
+        </div>
+
+        <div>
+            <p>Wrong: </p><p  id="total-wrong"></p>
+        </div>
+
+        <div>
+            <p>Percentage: </p><p  id="total-percentage"></p>
+        </div>
+
+        <div>
+            <p>Your Total Score: </p><p  id="total-score"></p>
+        </div>
+
+    </div>
+        <div id="marker">
+            
+        </div>
+
+    </div>
+
+<!-- </div> -->
+
+    <script src="/student quiz.js"></script>
+</body>
+</html>   
